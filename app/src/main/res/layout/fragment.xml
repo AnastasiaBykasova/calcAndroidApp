@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <TextView-->
+<!--        android:id="@+id/displayText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="22sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+<!--    </TextView>-->
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancingscript"
+        android:text="@string/name_app"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="21dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/convert"
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="563dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="563dp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChoose">
+
+        <RadioButton
+            android:id="@+id/radioСarats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Караты" />
+
+        <RadioButton
+            android:id="@+id/radioGrams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Граммы" />
+
+        <RadioButton
+            android:id="@+id/radioKilograms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Килограммы" />
+
+        <RadioButton
+            android:id="@+id/radioHundredweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Центнеры" />
+
+        <RadioButton
+            android:id="@+id/radioTons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тонны" />
+
+        <RadioButton
+            android:id="@+id/radioPounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фунты" />
+
+        <RadioButton
+            android:id="@+id/radioOunces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Унции" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/enterMass"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Введите массу"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/textViewChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/choose_measurement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterMass" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

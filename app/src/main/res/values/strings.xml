@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lab6_7_calcActionBar</string>
+    <string name="name_app">WeightUnitWizard</string>
+    <string name="convert">Перевести</string>
+    <string name="choose_measurement">Выберите единицу измерения:\n</string>
+    <string name="string_result">Результат:</string>
+    <string name="result" />
+    <string name="enterNumber">Введите массу</string>
+    <string name="clear">Очистить</string>
+    <string name="app_info_final">Калькулятор единиц измерения массы WeightUnitWizard, который по введенному значению в одной из систем (караты, граммы, кг, центнеры, тонны, фунты, унции) выводит значения во всех остальных из перечисленных единиц измерения.</string>
+    <string name="author_info">Быкасова Анастасия Сергеевна, 211-361</string>
+</resources>
